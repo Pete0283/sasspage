@@ -1,0 +1,17 @@
+@mixin equalSpaced($num_of_cols, $spacing, $width) {
+    
+    width: ($width - ($spacing * ($num_of_cols - 1)))/$num_of_cols;
+    margin-left: $spacing;
+    
+//remove Spacing from First Child
+    &:first-child{
+        margin-left: 0;
+    }
+
+}
+
+@mixin carousel-animation($frames, $static, $animation-name: 'carousel') {
+  // Make `$static` a percentage in case it's unitless
+  @if unitless($static) {
+    $static: percentage($static);
+  }

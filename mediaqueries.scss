@@ -1,0 +1,19 @@
+
+
+@media screen and (min-width: 400px){
+    
+    .col-4{
+        width:20.2%;}
+    }
+
+@media screen and (max-width: 399px) and (min-width: 1px){
+
+    .col-4{
+        width:10%;
+    }
+    .col-3{
+        width: 10%;
+    }
+
+}
+   

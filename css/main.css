@@ -1,0 +1,93 @@
+footer {
+  clear: both;
+  background-color: #9F08E8;
+  color: white; }
+
+body {
+  font: 100% Roboto Condensed, sans-serif;
+  background-color: #41007F; }
+
+.col-4 {
+  width: 20.15%;
+  color: #333;
+  float: left;
+  padding: 2%;
+  height: 350px;
+  border: 2px solid #9F08E8;
+  margin: 1px;
+  background-color: #A968FF; }
+  .col-4 .btn {
+    margin: 2%;
+    background-color: #949494;
+    color: black;
+    border: 5px solid #EAADEA; }
+  .col-4 h4 {
+    text-align: center;
+    font: Oswald, sans-serif; }
+
+.col-3 {
+  min-width: 150px;
+  max-width: 28.55%;
+  float: left;
+  padding: 2%;
+  height: 375px;
+  margin: 1px;
+  border: 2px solid #9F08E8;
+  background-color: #A968FF;
+  text-align: center; }
+  .col-3 .iconic {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    padding: 5px; }
+
+.wrapper {
+  width: 90%;
+  margin: 5%; }
+
+.masthead {
+  background-color: #9F08E8;
+  color: white;
+  border: 2px solid #A968FF; }
+  .masthead img {
+    margin-left: 0 auto;
+    margin-right: 0 auto; }
+  .masthead h2 {
+    text-align: center;
+    text-decoration: underline; }
+
+@media screen and (min-width: 150px) and (max-width: 599px) {
+  .col-3 {
+    min-width: 94%;
+    height: 40%; }
+    .col-3 .iconic {
+      width: 50px;
+      height: 50px; }
+
+  .col-4 {
+    width: 44.2%; }
+    .col-4 .btn {
+      margin: 20%; }
+
+  .masthead {
+    width: 99%;
+    height: 16%; }
+    .masthead img {
+      width: 49%;
+      float: left;
+      padding: 1%;
+      margin: -4px; }
+    .masthead h2 {
+      width: 45%;
+      float: right;
+      font-size: 12pt;
+      margin: -10px;
+      margin-left: 10px;
+      text-decoration: none; } }
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .col-3 {
+    width: 29.66667;
+    margin-left: 3; }
+    .col-3:first-child {
+      margin-left: 0; } }
+
+/*# sourceMappingURL=main.css.map */

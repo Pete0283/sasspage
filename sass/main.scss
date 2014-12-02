@@ -1,0 +1,122 @@
+@import "mixins", "variables", "sticky-footer";
+
+body{
+    font: 100% $font-stack;
+    background-color: #41007F;
+}
+
+.col-4 {
+   @include equalSpaced (4,4,100)
+    color: $primary-color;
+    float: left;
+    padding: 2%;
+    border: 2px solid $background-header;
+    background-color: $background-col;
+    
+    .btn {
+       
+        margin: 2%;
+        background-color: #949494;
+        color: black;
+        border: 5px solid #EAADEA;
+        
+    }
+    h4{
+        text-align: center;
+        font: $header-font;
+    }
+    
+}
+
+.col-3 {
+
+    min-width: 150px;
+    @include equalSpaced (3,3,100);
+    float: left;
+    padding: 2%;
+    border: 2px solid $background-header;
+    background-color: $background-col;
+    text-align: center;
+    
+    .iconic {
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        padding: 5px;
+    }
+
+}
+
+.wrapper{
+    width: 98%;
+    margin: 5%;
+}
+
+.masthead{
+    
+    background-color: $background-header;
+    color: white;
+    border: 2px solid $background-col;
+    
+    img{
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+    }
+    
+    h2{
+    
+        text-align: center;
+        text-decoration: underline;
+    }
+}
+
+@media screen and (min-width: 150px) and (max-width: 699px){
+    
+    .col-3{
+    
+        @include equalSpaced (3,3,100);
+        height: 40%;
+        
+        .iconic{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .col-4{
+    
+        @include equalSpaced (4,4,100);
+        
+        .btn{
+        
+            @include equalSpaced (1,1,100);
+        }
+    
+    }
+    
+    .masthead{
+        width: 99%;
+        height: 16%;
+        
+        
+        
+        img{
+        width: 49%;
+        float: left;
+            padding: 1%;
+            margin: -4px;
+        }
+        h2{
+            width: 45%;
+            float: right;
+            font-size: 12pt;
+            margin: -10px;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+        
+    }
+}
+
+    
+    
+    
+    
